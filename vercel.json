@@ -1,7 +1,13 @@
 {
+  "cleanUrls": false,
+  "trailingSlash": false,
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "^/(assets|canvaskit|icons|flutter_.*\\.js|main\\.dart\\.js|manifest\\.json|favicon\\.png|version\\.json)(/.*)?$",
+      "dest": "/$1"
+    },
+    {
+      "src": "/.*",
       "dest": "/index.html"
     }
   ]
