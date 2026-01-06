@@ -1,14 +1,8 @@
 {
-  "cleanUrls": false,
-  "trailingSlash": false,
-  "routes": [
+  "rewrites": [
     {
-      "src": "^/(assets|canvaskit|icons|flutter_.*\\.js|main\\.dart\\.js|manifest\\.json|favicon\\.png|version\\.json)(/.*)?$",
-      "dest": "/$1"
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
+      "source": "/:path*",
+      "destination": "/index.html"
     }
   ]
 }
